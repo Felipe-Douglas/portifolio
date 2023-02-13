@@ -1,0 +1,329 @@
+/* IMPORTANDO FONTS DO GOOGLE FONTS  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 14px;
+}
+
+/* INICIO CABECALHO */
+
+.wrapper-header {
+    background: #323232;
+    height: 100vh;
+}
+
+/* MENU */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin-bottom: 100px;
+}
+
+.nav-bar a {
+    padding: 4px;
+    margin: 4px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-fixed {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    background: #292929;
+}
+
+/* PROFILE */
+
+.wrapper-header-profile {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 100px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.profile-presentation {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-header-profile h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #292929;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.wrapper-header-profile h2 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.wrapper-header-profile h3 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.button-download {
+    color: #fff;
+    padding: 15px;
+    margin: 50px 0 0 0;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 50px;
+    text-align: center;
+    width: 50%;
+    border: 1px solid #fff;
+    transition: .5s;
+}
+
+.button-download:hover {
+    background: #fff;
+    color: #292929;
+    transition: .5s;
+}
+
+/* FIM CABECALHO */
+
+/* INICIO CONTEUDO PRINCIPAL */
+
+/* PADRONIZAÇÃO */
+section {
+    padding: 10px 0;
+    margin: 15px;
+    position: relative;
+    min-height: 100vh;
+}
+
+.section-title {
+    font-size: 8rem;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #aaa;
+    margin-bottom: 70px;
+}
+
+.section-subtitle {
+    font-weight: 700;
+    font-size: 4.5rem;
+    color: #ff0000;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 2.6rem;
+    text-transform: uppercase;
+}
+
+/* SOBRE */
+.wrapper-about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.wrapper-about p {
+    text-align: justify;
+}
+
+.wrapper-about img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+/* EDUCAÇÃO */
+.wrapper-education {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.timeline {
+    position: relative;
+    padding: 10px 10px 10px 50px;
+    max-width: 400px;
+    margin-bottom: 10px;
+}
+
+.timeline, .timeline { box-sizing: border-box; }
+  
+.timeline::before {
+    content: "";
+    width: 5px;
+    background-color: #de421a;
+    position: absolute;
+    top: 0; bottom: 0; left: 15px;
+}
+
+.timeline-title {
+    text-align: center;
+    font-weight: 700;
+}
+
+div.item-timeline {
+    padding: 20px 30px;
+    background-color: #292929;
+    position: relative;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+  
+p.date {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #fff;
+}
+p.txt {
+    margin: 10px 0 0 0;
+    color: #fff;
+}
+  
+div.item-timeline::after {
+    content: "";
+    background: #fff;
+    border: 4px solid #DE421A;
+    width: 16px; height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%; left: -40px;
+}  
+
+/* HABILIDADES */
+.wrapper-skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.wrapper-skills ul {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 200px;
+    padding: 6px;
+    list-style: none;  
+}
+
+.wrapper-skills ul h4 {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.wrapper-skills ul li {
+    font-size: 1.2rem;
+}
+
+.wrapper-progress {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+}
+
+.wrapper-progress div.progress {
+    width: 500px;
+}
+/* PORTIFOLIO */
+
+.wrapper-portifolio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-portifolio {
+    width: 300px;
+    height: 300px;
+    margin: 16px 0 0 24px;
+    background: #323232;
+    border-radius: 15px;
+}
+
+/* CONTATO */
+
+.wrapper-contact form {
+    background: #323232;
+    justify-content: center;
+}
+
+.wrapper-contact form button {
+    background: #ff0000;
+    color: #fff;
+    padding: 15px;
+    margin: 20px auto;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.wrapper-contact form button:hover {
+    opacity: .7;
+}
+
+.wrapper-contact form textarea {
+    resize: none;
+}
+
+/* FIM CONTEUDO PRINCIPAL */
+
+/* INICIO RODAPÉ */
+
+/* FIM RODAPÉ */
+
+
+/* RESPONSIVO */
+@media screen and (max-width: 700px) {
+    .wrapper-header-profile h1 {
+        font-size: 3rem;
+    }
+    .wrapper-header-profile h3 {
+        font-size: 2rem;
+    }
+    .wrapper-portifolio {
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .section-title {
+        font-size: 4rem;
+    }
+
+    .section-subtitle {
+        font-size: 2.4rem;
+        top: 24px;
+    }
+    
+}
