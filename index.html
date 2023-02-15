@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Filipe Douglas">
+    <meta name="reply-to" content="felipe.douglas.inf1@gmail.com">
+    <meta name="description" content="Portifólio profissional">
+    <meta name="keywords"
+        content="portifolio, desenvolvedor front-end, desenvolvedor back-end, desenvolvedor web, desenvolvedor mobile, desenvolvedor php" />
+    <meta name="robots" content="index,follow">
+
     <title>Portifólio</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -13,15 +20,22 @@
 
 <body>
     <header class="wrapper-header">
-        <nav class="nav-bar">
-            <a href="#home">Inicio</a>
-            <a href="#about">Sobre</a>
-            <a href="#education">Educação</a>
-            <a href="#skills">Habilidades</a>
-            <a href="#portifolio">Portifólio</a>
-            <a href="#contact">Contato</a>
-        </nav>
-        
+        <div class="nav-bar">
+            <div class="menu-mobile">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="navigation">
+                <a href="#home">Inicio</a>
+                <a href="#about">Sobre</a>
+                <a href="#education">Educação</a>
+                <a href="#skills">Habilidades</a>
+                <a href="#portifolio">Portifólio</a>
+                <a href="#contact">Contato</a>
+            </nav>
+        </div>
+
         <div class="container wrapper-header-profile" id="home">
             <img src="assets/img/profile.jpg" class="profile-img" alt="Imagem de Perfil">
 
@@ -30,7 +44,7 @@
                 <h1 class="profile-title">Filipe Douglas</h1>
                 <h3 class="profile-skills"></h3>
 
-                <a href="#" class="button-download">Baixar CV</a>
+                <a href="assets/archive/Curriculum_Filipe-Douglas.pdf" download class="button-download">Baixar CV</a>
             </div>
 
         </div>
@@ -46,6 +60,7 @@
                     <img src="assets/img/profile.jpg" alt="">
                 </div>
                 <div class="person-information">
+                    <h3>Desenvolvedor</h3>
                     <p>
                         Sou desenvolvedor FullStack, Mobile principalmente nas linguagens Html, Css e Javascript, PHP,
                         SQL e Flutter, estou sempre procurando melhorar mais e aprender novas linguagens. Busco novos
@@ -53,9 +68,13 @@
                         aprender mais.
                     </p>
 
-                    <ul>
-                        <li></li>
-                    </ul>
+                    <div class="person-information-data">
+                        <h6>Nome: <span class="text-secondary">Filipe Douglas</span></h6>
+                        <h6>Email: <span class="text-secondary">felipe.douglas.inf1@gmail.com</span></h6>
+                        <h6>Telefone: <span class="text-secondary">+55 (88) 98129-6429</span></h6>
+                        <h6>Idade: <span class="text-secondary">22</span></h6>
+                        <h6>Experiência (anos): <span class="text-secondary">3</span></h6>
+                    </div>
                 </div>
             </div>
         </section>
@@ -72,7 +91,7 @@
                         <p class="txt">EEEP Luiz Gonzaga Fonseca Mota</p>
                     </div>
                     <div class="item-timeline">
-                        <p class="date">12 Mar 2237 14:23</p>
+                        <p class="date">Curso Front-end Jr</p>
                         <p class="txt">Amontada Valley</p>
                     </div>
                 </div>
@@ -80,16 +99,16 @@
                 <div class="timeline">
                     <h3 class="timeline-title">Experiências</h3>
                     <div class="item-timeline">
-                        <p class="date">Ensino Médio</p>
-                        <p class="txt">EEEP Luiz Gonzaga Mota</p>
+                        <p class="date">Estágio</p>
+                        <p class="txt">EEEP Luiz Gonzaga Fonseca Mota</p>
                     </div>
                     <div class="item-timeline">
-                        <p class="date">12 Mar 2237 14:23</p>
-                        <p class="txt">Cates ate Doge food.</p>
+                        <p class="date">Desenvolvedor PHP</p>
+                        <p class="txt">Startup</p>
                     </div>
                     <div class="item-timeline">
-                        <p class="date">13 Mar 2237 20:12</p>
-                        <p class="txt">Cates took over the Doge beds.</p>
+                        <p class="date">Desenvolvedor FullStack</p>
+                        <p class="txt">i3 Soluções</p>
                     </div>
                 </div>
 
@@ -192,14 +211,21 @@
             <h1 class="section-subtitle">Portifólio</h1>
 
             <div class="wrapper-portifolio">
-                <div class="item-portifolio"></div>
-                <div class="item-portifolio"></div>
-                <div class="item-portifolio"></div>
-                <div class="item-portifolio"></div>
-                <div class="item-portifolio"></div>
-                <div class="item-portifolio"></div>
-                <div class="item-portifolio"></div>
-                <div class="item-portifolio"></div>
+                <div class="item-portifolio">
+                    <div class="item-protifolio__info">
+                        <a href="https://petshop-woad.vercel.app">Preview</a>
+                    </div>
+                </div>
+                <div class="item-portifolio">
+                    <div class="item-protifolio__info">
+                        <a href="https://petshop-woad.vercel.app">Preview</a>
+                    </div>
+                </div>
+                <div class="item-portifolio">
+                    <div class="item-protifolio__info">
+                        <a href="https://vercel.com/felipe-douglas/escola-digital">Preview</a>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -208,21 +234,42 @@
             <h1 class="section-subtitle">Contato</h1>
 
             <div class="wrapper-contact">
-                <form action="" method="post" class="form-group">
-                    <div class="col-md-6">
-                        <label for="name">Nome</label>
-                        <input type="text" name="name" id="name" class="form-control">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" class="form-control">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="mensagem">Mensagem</label>
-                        <textarea name="" id="mensagem" class="form-control"></textarea>
+                <form action="" class="form-group">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" class="form-control">
+                        </div>
                     </div>
 
-                    <button class="btn-form-contact">Enviar</button>
+                    <div class="row mt-3 justify-content-center">
+                        <div class="col-md-6">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control">
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-3 justify-content-center">
+                        <div class="col-md-6">
+                            <label for="assunto">Assunto</label>
+                            <input type="text" name="assunto" id="assunto" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row mt-3 justify-content-center">
+                        <div class="col-md-6">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea name="" id="mensagem" name="mensagem" cols="30" class="form-control" rows="10"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3 justify-content-center">
+                        <div class="col-md-6">
+                            <button type="submit" class="btn btn-danger w-20">Enviar</button>
+
+                        </div>
+                    </div>
+
                 </form>
             </div>
         </section>
@@ -230,13 +277,29 @@
     </main>
 
     <footer class="wrapper-footer">
-        linkedin
-        github
+        <div class="social">
+            <a href="https://www.linkedin.com/in/felipe-d-93183113a/">
+                <img src="assets/img/linkedin.svg" alt="">
+                LinkedIn
+            </a>
+
+            <a href="https://github.com/Felipe-Douglas">
+                <img src="assets/img/github.svg" alt="">
+                GitHub
+            </a>
+
+        </div>
+        <div class="copy">
+            <p>
+                &copy; Copyright <span class="year"></span>
+            </p>
+        </div>
     </footer>
 
     <script src="assets/js/index.umd.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/ajx.js"></script>
 
 </body>
 
